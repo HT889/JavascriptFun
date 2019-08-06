@@ -1,5 +1,5 @@
-const newPage = window.location.pathname = '/Users/haigtalarian/Desktop/Code/repositories/MyWebsite/index.html'
-console.log(newPage);
+// const newPage = window.location.pathname = '/Users/haigtalarian/Desktop/Code/repositories/MyWebsite/index.html'
+// console.log(newPage);
 
 document.getElementById('click-me').onclick = function changeContent() {
 
