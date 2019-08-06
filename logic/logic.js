@@ -1,21 +1,34 @@
 // const newPage = window.location.pathname = '/Users/haigtalarian/Desktop/Code/repositories/MyWebsite/index.html'
 // console.log(newPage);
 
-document.getElementById('click-me').onclick = function changeContent() {
+// document.getElementById('click-me').onclick = function changeContent() {
 
-    document.getElementById('click-me').innerHTML = "Thanks for that.";
-    document.getElementById('click-me').style = "Color: red";
-    document.querySelector('h5').setAttribute("id", "clicked-me");
-    // setTimeout(myFunction(window.location.pathname = '/Users/haigtalarian/Desktop/Code/repositories/MyWebsite/index.html'), 3000)
+//     document.getElementById('click-me').innerHTML = "Thanks for that.";
+//     document.getElementById('click-me').style = "Color: red";
+//     document.querySelector('h5').setAttribute("id", "clicked-me");
+//     // setTimeout(myFunction(window.location.pathname = '/Users/haigtalarian/Desktop/Code/repositories/MyWebsite/index.html'), 3000)
     
+//     // $("#clicked-me").click(function () {
+//     // })
+// }
 
-    // $("#clicked-me").click(function () {
-    // })
-}
+document.addEventListener('click' ,function(e) {
+    e.preventDefault();
+    if (e.target.matches('#clicked-me')) {
+        console.log("IT WORKED")
+    }
+    if (e.target.matches('#click-me')) {
+        console.log("jsanfujn IT WORKED")
+        document.getElementById('click-me').innerHTML = "Thanks for that.";
+        document.getElementById('click-me').style = "Color: red";
+        document.querySelector('h5').setAttribute("id", "clicked-me");    
+    }
 
-$("#clicked-me").click(function () {
-    console.log("test");
 })
+
+// $("#clicked-me").click(function () {
+//     console.log("test");
+// })
 
 // document.addEventListener('click', function (event) {
 
